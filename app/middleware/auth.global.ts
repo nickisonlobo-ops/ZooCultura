@@ -1,6 +1,6 @@
 import { createSupabaseClient } from '~/lib/supabase'
 
-const ADMIN_ROUTES = ['/funcionarios', '/contas-pagar', '/produtos', '/vendas']
+const ADMIN_ROUTES = ['/funcionarios', '/contas-pagar']
 
 export default defineNuxtRouteMiddleware(async (to) => {
   const supabase = createSupabaseClient()

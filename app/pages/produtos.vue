@@ -3,7 +3,7 @@
 
     <!-- ═══════════════════ CABEÇALHO ═══════════════════ -->
     <div class="relative rounded-3xl overflow-hidden mb-8 shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500" />
+      <div class="absolute inset-0 bg-gradient-to-br from-green-900 via-green-700 to-green-500" />
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(251,146,60,0.18),transparent_60%)]" />
       <div class="absolute -top-16 -right-16 w-72 h-72 rounded-full bg-white/[0.04] pointer-events-none" />
       <div class="absolute -bottom-20 left-1/4 w-96 h-96 rounded-full bg-white/[0.03] pointer-events-none" />
@@ -17,12 +17,12 @@
             </div>
             <div>
               <div class="flex items-center gap-2 mb-1">
-                <span class="text-xs font-semibold text-blue-300 uppercase tracking-widest">Estoque</span>
-                <span class="w-1 h-1 rounded-full bg-blue-400/50" />
-                <span class="text-xs text-blue-300/70 hidden sm:inline">ZooCultura</span>
+                <span class="text-xs font-semibold text-green-300 uppercase tracking-widest">Estoque</span>
+                <span class="w-1 h-1 rounded-full bg-green-400/50" />
+                <span class="text-xs text-green-300/70 hidden sm:inline">ZooCultura</span>
               </div>
               <h1 class="text-xl sm:text-3xl font-bold text-white tracking-tight leading-none">Produtos</h1>
-              <p class="text-sm text-blue-200/80 mt-1.5">
+              <p class="text-sm text-green-200/80 mt-1.5">
                 {{ loading ? 'Carregando...' : `${produtosFiltrados.length} de ${produtos.length} produto(s) exibido(s)` }}
               </p>
             </div>
@@ -43,7 +43,7 @@
             </button>
             <button
               type="button"
-              class="inline-flex items-center gap-2 text-sm font-bold px-3 sm:px-5 py-2.5 rounded-xl bg-white text-blue-800 hover:bg-blue-50 shadow-lg shadow-blue-900/25 transition-all duration-200 hover:scale-[1.02]"
+              class="inline-flex items-center gap-2 text-sm font-bold px-3 sm:px-5 py-2.5 rounded-xl bg-white text-green-800 hover:bg-green-50 shadow-lg shadow-green-900/25 transition-all duration-200 hover:scale-[1.02]"
               @click="abrirAdicionar"
             >
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
@@ -57,9 +57,9 @@
         <!-- Stats -->
         <div v-if="!loading" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div class="flex flex-col gap-1 bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 border border-white/10 hover:bg-white/15 transition-colors">
-            <span class="text-xs font-semibold text-blue-300 uppercase tracking-widest">Total</span>
+            <span class="text-xs font-semibold text-green-300 uppercase tracking-widest">Total</span>
             <span class="text-xl font-black text-white leading-tight">{{ produtos.length }}</span>
-            <span class="text-xs text-blue-300/60">produto(s)</span>
+            <span class="text-xs text-green-300/60">produto(s)</span>
           </div>
           <div class="flex flex-col gap-1 bg-green-400/10 rounded-2xl px-5 py-4 border border-green-300/20 hover:bg-green-400/15 transition-colors">
             <div class="flex items-center gap-1.5">
