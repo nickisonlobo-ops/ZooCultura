@@ -244,21 +244,19 @@
                 :key="at.id"
                 class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
               >
-                <!-- Header premium concluída -->
-                <div class="relative px-5 pt-4 pb-3 bg-gradient-to-r from-green-900 via-green-800 to-green-700 overflow-hidden">
-                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.08),transparent_65%)]" />
-                  <div class="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-white/5" />
-                  <div class="relative flex items-start justify-between gap-2">
+                <!-- Header concluída neutro -->
+                <div class="px-5 pt-4 pb-3 bg-gray-50 border-b border-gray-100">
+                  <div class="flex items-start justify-between gap-2">
                     <div class="flex items-start gap-2">
-                      <svg class="w-4 h-4 text-green-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                      <h3 class="font-black text-white/75 text-sm leading-snug tracking-tight line-through decoration-green-400">{{ at.titulo }}</h3>
+                      <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                      <h3 class="font-semibold text-gray-400 text-sm leading-snug line-through decoration-gray-300">{{ at.titulo }}</h3>
                     </div>
-                    <span class="shrink-0 inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full border bg-green-500/20 border-green-400/40 text-green-200">
-                      <span class="w-1.5 h-1.5 rounded-full bg-green-400" />
+                    <span class="shrink-0 inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-green-100 text-green-700">
+                      <span class="w-1.5 h-1.5 rounded-full bg-green-500" />
                       Concluída
                     </span>
                   </div>
-                  <p v-if="at.descricao" class="relative mt-1.5 text-xs text-green-100/50 leading-relaxed line-clamp-2">{{ at.descricao }}</p>
+                  <p v-if="at.descricao" class="mt-1 text-xs text-gray-400 leading-relaxed line-clamp-2">{{ at.descricao }}</p>
                 </div>
 
                 <div class="px-5 py-3 flex flex-wrap gap-2">
