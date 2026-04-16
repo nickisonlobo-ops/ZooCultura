@@ -497,8 +497,6 @@
 import { ref, reactive, computed, watch, onMounted } from 'vue'
 import { createSupabaseClient } from '~/lib/supabase'
 import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
 import { useEmpresa } from '~/composables/useEmpresa'
 import AppInput from '~/components/AppInput.vue'
 import AppButton from '~/components/AppButton.vue'
@@ -520,6 +518,7 @@ interface ContaPagar {
 
 const supabase = createSupabaseClient()
 const { empresaId, loadEmpresa } = useEmpresa()
+const { isAdmin, isAdminOrGerente } = useAdmin()
 
 const contas = ref<ContaPagar[]>([])
 const loading = ref(true)

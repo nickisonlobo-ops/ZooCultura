@@ -501,8 +501,6 @@
 import { ref, reactive, computed, onMounted } from 'vue'
 import { createSupabaseClient } from '~/lib/supabase'
 import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
 import { useEmpresa } from '~/composables/useEmpresa'
 import AppButton from '~/components/AppButton.vue'
 import { gerarTarefasDiarias, chaveGeracaoHoje } from '~/composables/useGerarTarefas'
@@ -526,6 +524,7 @@ interface Atividade {
 
 const supabase = createSupabaseClient()
 const { empresaId, loadEmpresa } = useEmpresa()
+const { isAdmin, isAdminOrGerente } = useAdmin()
 
 const atividades         = ref<Atividade[]>([])
 const funcionariosOpcoes = ref<FuncionarioOpcao[]>([])

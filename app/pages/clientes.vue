@@ -390,8 +390,6 @@
 import { ref, reactive, computed, onMounted } from 'vue'
 import { createSupabaseClient } from '~/lib/supabase'
 import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
 import { useEmpresa } from '~/composables/useEmpresa'
 import AppInput from '~/components/AppInput.vue'
 import AppButton from '~/components/AppButton.vue'

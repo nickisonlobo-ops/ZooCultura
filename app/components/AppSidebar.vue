@@ -82,8 +82,8 @@ const allNavSections = [
   {
     title: 'Operação',
     items: [
-      { to: '/produtos', icon: 'package', label: 'Produtos', minPerfil: 'all' },
-      { to: '/funcionarios', icon: 'users', label: 'Funcionários', minPerfil: 'all' },
+      { to: '/produtos', icon: 'package', label: 'Produtos', minPerfil: 'manager' },
+      { to: '/funcionarios', icon: 'users', label: 'Funcionários', minPerfil: 'manager' },
       { to: '/atividades', icon: 'clipboard', label: 'Atividades', minPerfil: 'all' },
     ],
   },

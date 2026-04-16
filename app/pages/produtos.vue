@@ -327,13 +327,13 @@
                 <div class="flex flex-col gap-1.5">
                   <label class="text-sm font-semibold text-gray-700">Unidade de Medida</label>
                   <select v-model="form.unidade_medida" class="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-gray-800 bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                    <option value="un">un �?" Unidade</option>
-                    <option value="kg">kg �?" Quilograma</option>
-                    <option value="g">g �?" Grama</option>
-                    <option value="l">l �?" Litro</option>
-                    <option value="ml">ml �?" Mililitro</option>
-                    <option value="pct">pct �?" Pacote</option>
-                    <option value="sc">sc �?" Saco</option>
+                    <option value="un">un — Unidade</option>
+                    <option value="kg">kg — Quilograma</option>
+                    <option value="g">g — Grama</option>
+                    <option value="l">l — Litro</option>
+                    <option value="ml">ml — Mililitro</option>
+                    <option value="pct">pct — Pacote</option>
+                    <option value="sc">sc — Saco</option>
                   </select>
                 </div>
               </div>
@@ -437,8 +437,6 @@
 import { ref, reactive, computed, onMounted } from 'vue'
 import { createSupabaseClient } from '~/lib/supabase'
 import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
-import { useAdmin } from '~/composables/useAdmin'
 import { useEmpresa } from '~/composables/useEmpresa'
 import AppInput from '~/components/AppInput.vue'
 import AppButton from '~/components/AppButton.vue'
@@ -462,6 +460,7 @@ interface Produto {
 }
 
 const supabase = createSupabaseClient()
+const { isAdmin, isAdminOrGerente } = useAdmin()
 const { empresaId, loadEmpresa } = useEmpresa()
 
 const produtos = ref<Produto[]>([])
